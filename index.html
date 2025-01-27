@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assinment-Three</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Front Awosome  link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Front Link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- TailWind And DaisyUi CDN link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Manrope Font  -->
+    <style>
+        .manrope-fonts {
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+    </style>
+    <!-- Script  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'button-color': '#ABEF5F',
+                        'seconddbutton-color': '#ABEF5F',
+                        'color-bold': '#212121',
+                        'color-para': '#494949',
+                        'color-paras': '#ABEF5F',
+                        'background-color': 'rgba(30, 30, 30, 1.00)',  <!--3d section-->
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class="manrope-fonts">
+    <!-- nav bar design  -->
+    <header class="mx-4 md: ">
+        <section class="container mx-auto mb-32">
+            <div class="navbar bg-base-100 container mx-auto ">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                    </div>
+                    <a class="btn btn-ghost font-extrabold">
+                        <div class="bg-btn-bg-color -rotate-45  rounded-full flex items-center justify-center">
+                            <div>
+                                <i
+                                    class="fa-solid fa-arrow-right-long h-[32px] w-[32px] bg-button-color rounded-full text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="md:text-3xl text-2xl ">
+                            Rinterio
+                        </div>
+                    </a>
+
+
+
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-base font-bold">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="md:flex items-center mx-5">
+                        <div class="p-2 rounded-full md:block hidden">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="m-5 md:block hidden">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+
+                    <div class="md:flex hidden md:block">
+                        <button class="btn bg-button-color px-4 ">Book Consult
+                            <div class="bg-[#1C1C1C] p-1 rounded-full -rotate-45 text-white ">
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="sm:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <!-- banner section  -->
+            <div class="md:flex items-center justify-center flex-col">
+                <div>
+                    <img src="assets/banner.png" alt="">
+                </div>
+                <div class="text-center">
+                    <h1
+                        class="mb-6 mt-5 text-center text-4xl lg:text-7xl font-extrabold text-[#212121] text-color-bold ">
+                        A barn house of this design has a striking
+                        appearance</h1>
+                    <p class="mb-7 mt-11 text-base font-bold text-color-para md:text-center">The barn house captivates
+                        with its blend of rustic charm and modern sophistication,
+                        featuring weathered wood, sleek metal <br>
+                        accents, and large windows that flood the space with natural light.</p>
+                </div>
+
+                <div class="flex justify-center">
+                    <button
+                        class="px-20 py-2 md:px-10 md:py-2 bg-seconddbutton-color rounded-full flex text-color-bold font-bold bg-opacity-70">
+                        View Details
+                        <div>
+                            <i
+                                class="fa-solid fa-arrow-right-long ml-2 bg-orange-500 text-white p-1 rounded-full -rotate-45"></i>
+                        </div>
+                    </button>
+
+                </div>
+            </div>
+        </section>
+
+
+    </header>
+
+    <main>
+        <!-- We design thoughtful, liveable spaces  1st div-->
+        <section class=" bg-gray-100 py-28 ">
+            <div class="container mx-auto grid md:grid-cols-2 gap-9 "> <!--main conteiner-->
+                <div>
+                    <div class="flex justify-center md:justify-normal md:ml-11 mb-5 mx-4">
+                        <button class="bg-white rounded-lg flex font-bold text-base pr-2 py-1">
+                            <div class="mr-1">
+                                <i class="fa-solid fa-arrow-right-long ml-2 text-black  rounded-full "></i>
+                            </div>
+                            About Us
+                        </button>
+                    </div>
+
+                    <div class="md:ml-11 mx-4">
+                        <h1 class="text-4xl md:text-5xl font-bold mb-5 text-color-bold text-center md:text-left">We
+                            design
+                            thoughtful, liveable spaces</h1>
+                        <p class="mb-6 text-color-para text-center md:text-left text-sm font-normal">Achieved through
+                            symmetry (equal visual weight) or asymmetry (unequal but still visually balanced). It
+                            ensures that no part of the room feels heavier than another.</p>
+                    </div>
+                    <div class="flex items-center bg-white rounded-2xl py-6 px-4 mb-6 md:ml-11 mx-4">
+                        <div class="mr-3">
+                            <img src="assets/commercial.png" alt="">
+                        </div>
+                        <div>
+                            <h5 class="text-xl font-bold mb-2">Commercial</h5>
+                            <p class="text-sm font-medium text-color-para">Used to create visual interest. This can be
+                                achieved through color, texture, or materials.</p>
+                        </div>
+                    </div>
+
+                    <!-- Copy this section  -->
+
+                    <div class="flex items-center bg-white rounded-2xl py-6 px-4 md:ml-11 mx-4">
+                        <div class="mr-3">
+                            <img src="assets/residential.png" alt="">
+                        </div>
+                        <div>
+                            <h5 class="text-xl font-bold mb-1">Project</h5>
+                            <p class="text-sm font-medium text-color-para">Ensuring that all elements of the room work
+                                together cohesively. Harmony is achieved </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- We design thoughtful, liveable spaces  2nd div-->
+                <div class="mx-4">
+                    <div class="">
+                        <img src="assets/Rectangle.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Number Count  -->
+
+            <section class="container mx-auto mt-28 ">
+                <div class="bg-white md:ml-10 md:mr-10 md:grid md:grid-cols-4 rounded-xl p-6 mx-4">
+                    <!-- first count Number  -->
+                    <div class="">
+                        <div class="flex flex-col justify-center items-center p-6 rounded-3xl">
+                            <div class="">
+                                <i class="fa-regular fa-message text-4xl text-red-300"></i>
+                            </div>
+                            <h1 class="text-4xl font-extrabold mt-2 mb-2">235+</h1>
+                            <p class="text-base font-medium ">Happy Client Review</p>
+                        </div>
+                    </div>
+                    <!-- Second count Number  -->
+                    <div class="">
+                        <div class="flex flex-col justify-center items-center p-6 rounded-3xl">
+                            <div class="">
+                                <i class="fa-regular fa-message text-4xl text-red-300"></i>
+                            </div>
+                            <h1 class="text-4xl font-extrabold mt-2 mb-2">500+</h1>
+                            <p class="text-base font-medium ">Work Departments</p>
+                        </div>
+                    </div>
+                    <!-- third count Number  -->
+                    <div class="">
+                        <div class="flex flex-col justify-center items-center p-6 rounded-3xl">
+                            <div class="">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+                            <h1 class="text-4xl font-extrabold mt-2 mb-2">300K+</h1>
+                            <p class="text-base font-medium ">Our Happy Client</p>
+                        </div>
+                    </div>
+                    <!-- four count Number  -->
+                    <div class="">
+                        <div class="flex flex-col justify-center items-center p-6 rounded-3xl">
+                            <div class="">
+                                <i class="fa-regular fa-message text-4xl text-red-300"></i>
+                            </div>
+                            <h1 class="text-4xl font-extrabold mt-2 mb-2">307+</h1>
+                            <p class="text-base font-medium ">Staff Members</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Our Works Process conteiner section -->
+
+            <div class="container mx-auto mt-28 mb-28 ">
+                <div class="flex justify-center md:ml-11 mb-6 mx-4">
+                    <button class="bg-white rounded-lg flex font-bold text-base py-2 px-5 text-color-bold ">
+                        <div class="mr-2">
+                            <i class="fa-solid fa-arrow-right-long ml- text-black  rounded-full "></i>
+                        </div>
+                        How we works
+                    </button>
+                </div>
+
+                <div class="text-center mx-4">
+                    <h1 class="text-4xl md:text-5xl font-bold text-color-bold mb-5">Our Works Process</h1>
+                    <p class="text-sm font-medium text-color-para md:w-3/4 md:text-center md:mx-auto">Ensuring that all
+                        elements of the room work together cohesively. Harmony is achieved when the color palette,
+                        furniture, and accessories are in sync.Scale refers to the size of an object in relation to the
+                        room, while proportion is the size of one object in relation to another. Both are important for
+                        creating a balanced</p>
+                </div>
+                <!-- Work Progress Card  -->
+                <!-- First card -->
+                <div class="grid md:grid-cols-4 md gap-3 mt-8 md:ml-11 md:mr-11 mx-4">
+                    <div class="bg-[#E7C1D3] rounded-2xl">
+                        <div class="p-6">
+                            <div>
+                                <img src="assets/concept.png" alt="">
+                            </div>
+                            <div>
+                                <h5 class="text-xl font-bold text-color-bold mt-2 mb-2">
+                                    Concept
+                                </h5>
+                                <p class="text-sm font-medium text-color-para">The barn house captivates with its blend
+                                    of rustic charm and modern.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Second card -->
+                    <div class="bg-[#EFDA6E] rounded-2xl">
+                        <div class="p-6">
+                            <div>
+                                <img src="assets/flow-chart.png" alt="">
+                            </div>
+                            <div>
+                                <h5 class="text-xl font-bold text-color-bold mt-2 mb-2">
+                                    Concept
+                                </h5>
+                                <p class="text-sm font-medium text-color-para">The barn house captivates with its blend
+                                    of rustic charm and modern.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Third card -->
+                    <div class="bg-[#A4DAC3] rounded-2xl">
+                        <div class="p-6">
+                            <div>
+                                <img src="assets/vision.png" alt="">
+                            </div>
+                            <div>
+                                <h5 class="text-xl font-bold text-color-bold mt-2 mb-2">
+                                    Concept
+                                </h5>
+                                <p class="text-sm font-medium text-color-para">The barn house captivates with its blend
+                                    of rustic charm and modern.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Four card -->
+                    <div class="bg-[#77AAEA] rounded-2xl">
+                        <div class="p-6">
+                            <div>
+                                <img src="assets/budget-planning.png" alt="">
+                            </div>
+                            <div>
+                                <h5 class="text-xl font-bold text-color-bold mt-2 mb-2">
+                                    Concept
+                                </h5>
+                                <p class="text-sm font-medium text-color-para">The barn house captivates with its blend
+                                    of rustic charm and modern.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Our Latest Portfolio  -->
+            <section class="bg-white md:p-28 mb-28">
+                <div class="container mx-auto">
+                    <div class="flex justify-center mb-5">
+                        <button
+                            class="px-10 py-3 md:py-2 md:px-10 bg-seconddbutton-color rounded-full flex text-color-bold font-bold bg-opacity-70">
+
+                            <div>
+                                <i
+                                    class="fa-solid fa-arrow-right-long ml-2 text-orange-500 p-1 rounded-full bg-opacity-80 mr-4"></i>
+                            </div>
+                            Explore our Latest works
+                        </button>
+                    </div>
+
+                    <div class="text-center mx-4">
+                        <h1 class="text-4xl md:text-5xl font-bold text-color-bold mb-4">Our Latest Portfolio</h1>
+                        <p class="text-base font-medium text-color-para text-center ">The barn house captivates with its
+                            blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal
+                            accents.</p>
+                    </div>
+                    <!-- man card section  -->
+
+                    <!-- Frist Card  -->
+                    <div class="mt-8 md:ml-10 md:mr-10 md:grid md:grid-cols-12 md:grid-rows-12 md:h-[450px] gap-6 mx-4">
+                        <div
+                            class=" md:col-span-8 row-span-6 md:flex items-center border-[1px] border-[#E9E9E9] rounded-3xl">
+                            <div class="p-5 ">
+                                <img class="w-full md:w-auto" src="assets/img1.png" alt="">
+                            </div>
+                            <div class="space-y-3">
+                                <h1 class="text-2xl  font-extrabold text-color-bold pl-5">Commercial</h1>
+                                <p class="text-base font-medium text-color-para pl-5">Characterized by clean lines, open
+                                    spaces, and a neutral color palette with occasional bold accents. It often features
+                                    minimalis</p>
+                                <button class="text-base text-color-bold font-extrabold flex items-center pl-5">
+                                    View Details
+                                    <div class="ml-2 ">
+                                        <i
+                                            class="fa-solid fa-arrow-right-long ml- text-black  rounded-full p-1  bg-seconddbutton-color -rotate-45"></i>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Second Card  -->
+                        <div
+                            class=" md:col-span-4 row-span-6 flex items-center justify-center border-[1px] border-[#E9E9E9] rounded-3xl ">
+                            <div class="p-6">
+                                <img class="w-full h-full border-2 " src="assets/img2.png" alt="">
+                            </div>
+
+                        </div>
+                        <!-- Third Card  -->
+                        <div
+                            class=" md:col-span-3 row-span-6 flex items-center justify-center border-[1px] border-[#E9E9E9] rounded-3xl">
+                            <div class="p-6 md:w-auto md:h-auto w-[500px] h-[200px]hidden md:block hidden">
+                                <img class="w-full h-full border-2" src="assets/img3.png" alt="">
+                            </div>
+                            <div class="p-6 md:hidden block">
+                                <img class="w-[500px] h-[200px] border-2" src="assets/img5.png" alt="">
+                            </div>
+                        </div>
+                        <!--Fourth Card  -->
+                        <div
+                            class=" col-span-6 row-span-6  md:flex items-center border-[1px] border-[#E9E9E9] rounded-3xl">
+                            <div class="p-6 ">
+                                <img class="w-[500px] h-[200px] md:w-[200px] md:h-[140px] " src="assets/img4.png"
+                                    alt="">
+                            </div>
+                            <div class="space-y-3 max-w-[200px]">
+                                <h1 class="text-2xl  font-extrabold text-color-bold md:pl-0 pl-5">Personalizing </h1>
+                                <p class="text-base font-medium text-color-para  md:pl-0 pl-5">Often confused with
+                                    modern design, contemporary design </p>
+                                <button class="text-base text-color-bold font-extrabold flex items-center pl-5">
+                                    View Details
+                                    <div class="ml-2 ">
+                                        <i
+                                            class="fa-solid fa-arrow-right-long ml- text-black  rounded-full p-1  bg-seconddbutton-color -rotate-45"></i>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                        <!--five Card  -->
+
+                        <div
+                            class=" col-span-3 row-span-6  flex items-center justify-center border-[1px] border-[#E9E9E9] rounded-3xl">
+                            <div class="p-6">
+                                <img class="w-[500px] h-[200px] md:w-[200px] md:h-[140px]" src="assets/img5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Optional section  -->
+            <section class="container mx-auto mb-28">
+                <div class="md:ml-11 md:mr-11 mx-4">
+                    <div>
+                        <h1 class="text-4xl md:text-5xl font-bold mb-5 text-color-bold text-center">Read Our Articles
+                            and News</h1>
+                        <p class="text-color-para text-base font-medium text-center">The barn house captivates with its
+                            blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal
+                            accents.</p>
+                    </div>
+                    <!-- first Card  -->
+                    <div class="md:grid md:grid-cols-3 gap-12 md:ml-10 mt-12 ">
+                        <div class="bg-white p-6 rounded-2xl mb-10">
+                            <div class="ml-4 md:ml-0">
+                                <img src="assets/article1.png" alt="">
+                            </div>
+                            <div class="ml-4 md:ml-0">
+                                <small class="mr-3 italic">July14, 2024</small>
+                                <small class="mr-3 italic">By Admin</small>
+                            </div>
+                            <div class="ml-4 md:ml-0">
+                                <h1 class="md:text-2xl font-bold mb-2 text-color-bold">How to choose the furniture right
+                                    of your home.</h1>
+                                <p class="text-color-para text-normal font- italic mb-2">The barn house captivates with
+                                    its blend of rustic charm and modern. </p>
+                                <button class=" text-color-bold font-bold flex items-center">
+                                    Read More
+                                    <div class="ml-2 ">
+                                        <i
+                                            class="fa-solid fa-arrow-right-long ml- text-black  rounded-full p-1  bg-seconddbutton-color -rotate-45"></i>
+                                    </div>
+                                </button>
+
+
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl mb-10">
+                            <div class="ml-4">
+                                <img src="assets/article2.png" alt="">
+                            </div>
+                            <div class="ml-4 md:ml-0">
+                                <small class="mr-3 italic">July14, 2024</small>
+                                <small class="mr-3 italic">By Admin</small>
+                            </div>
+                            <div class="ml-4">
+                                <h1 class="md:text-2xl font-bold mb-2 text-color-bold">How to choose the furniture right
+                                    of your home.</h1>
+                                <p class="text-color-para text-normal font- italic mb-2">The barn house captivates with
+                                    its blend of rustic charm and modern. </p>
+                                <button class=" text-color-bold font-bold flex items-center">
+                                    Read More
+                                    <div class="ml-2 ">
+                                        <i
+                                            class="fa-solid fa-arrow-right-long ml- text-black  rounded-full p-1  bg-seconddbutton-color -rotate-45"></i>
+                                    </div>
+                                </button>
+
+
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl mb-10">
+                            <div class="ml-4">
+                                <img src="assets/article3.png" alt="">
+                            </div>
+                            <div class="ml-4">
+                                <small class="mr-3 italic">July14, 2024</small>
+                                <small class="mr-3 italic">By Admin</small>
+                            </div>
+                            <div class="ml-4">
+                                <h1 class="md:text-2xl font-bold mb-2 text-color-bold">How to choose the furniture right
+                                    of your home.</h1>
+                                <p class="text-color-para text-normal font- italic mb-2">The barn house captivates with
+                                    its blend of rustic charm and modern. </p>
+                                <button class=" text-color-bold font-bold flex items-center">
+                                    Read More
+                                    <div class="ml-2 ">
+                                        <i
+                                            class="fa-solid fa-arrow-right-long ml- text-black  rounded-full p-1  bg-seconddbutton-color -rotate-45"></i>
+                                    </div>
+                                </button>
+
+
+                            </div>
+                        </div>
+                        <!-- ------------------------------------------ -->
+
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- CLIENT REVIEWS -->
+            <section class="container mx-auto mb-28 mt-28">
+                <div class="md:ml-12 md:mr-11 mx-4">
+                    <h1 class="text-4xl md:text-5xl font-bold text-color-bold text-center mb-20">CLIENT REVIEWS</h1>
+                    <div class="grid md:grid-cols-3 gap-5">
+                        <div class=" text-center text-lg font-semibold bg-white rounded-2xl pt-20 pb-20 space-y-4 shadow"> 
+                            <h1>Professional & Satisfying</h1>
+                            <div class="text-yellow-500">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h4>DR. RICHMOND GOMES</h4>
+                            <p class="text-base font-medium text-color-para pl-2 pr-2">It was a Wonderful experience with BD INTERIOR. They are very professional about their service. I am very much satisfied to them. I think, they will be Top ranked Interior Design Company in very short time if they maintain this type of Professionalism </p>
+                        </div>
+                        <div class=" text-center text-lg font-semibold bg-white rounded-2xl pt-20 pb-20 space-y-4 shadow"> 
+                            <h1>Impressive First Experience</h1>
+                            <div class="text-yellow-500">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h4>DALIA SULTANA</h4>
+                            <p class="text-base font-medium text-color-para pl-2 pr-2">My experience with BD INTERIOR was exceptional. Their professionalism stood out throughout the project. I’m completely satisfied with their services. They always maintained top level of workmanship and professionalism throughout my project. </p>
+                        </div>
+                        <div class=" text-center text-lg font-semibold bg-white rounded-2xl pt-20 pb-20 space-y-4 shadow"> 
+                            <h1>Creative and Talented Team</h1>
+                            <div class="text-yellow-500">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h4>SWAPON BISWAS</h4>
+                            <p class="text-base font-medium text-color-para pl-2 pr-2">I’m a huge fan of BD INTERIOR. They assembled the perfect design team, helping me clearly define my vision. Their creativity and talent are unmatched. Everything stayed within budget. I can't express enough how impressed I am with this company.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- Let’s Discuss Next Project  -->
+
+            <section class="bg-[url(assets/bg.jpg)] bg-cover bg-center bg-no-repeat py-28">
+                <div>
+                    <div class="container mx-auto text-center ">
+                        <div class="flex justify-center md:ml-11 mb-5 mx-4">
+                            <button
+                                class="bg-seconddbutton-color rounded-full flex font-bold text-base py-2 px-5 text-color-bold ">
+                                <div class="mr-2">
+                                    <i class="fa-solid fa-arrow-right-long ml- text-black  rounded-full "></i>
+                                </div>
+                                Let’s Connect
+                            </button>
+                        </div>
+
+
+                        <h1 class=" text-4xl md:text-5xl font-bold text-color-bold mx-4">Let’s Discuss Next Project</h1>
+                        <p
+                            class="my-5 text-center text-sm font-medium text-color-para mx-4 md:w-3/4 md:text-center md:mx-auto">
+                            Inspired by warehouses and factories, this style features raw materials like exposed brick,
+                            concrete floors, and metal fixtures. It often incorporates reclaimed or vintage items.
+                        </p>
+                        <!-- input section  grid gap-6 mt-1 md:ml-11 md:mr-11 -->
+                        <div class="md:grid md:grid-cols-2 gap-6 mt-1 md:ml-11 md:mr-11 mx-4">
+                            <div><input placeholder="First Name*" class="w-full py-3 pl-6 rounded-3xl mb-5 md:mb-0"
+                                    type="text">
+                            </div>
+                            <div><input placeholder="Last Name*" class="w-full py-3 pl-6 rounded-3xl mb-5 md:mb-0"
+                                    type="text"></div>
+                            <div><input placeholder="Phone Number*" class="w-full py-3 pl-6 rounded-3xl mb-5 md:mb-0"
+                                    type="text">
+                            </div>
+                            <div><input placeholder="Email Number*" class="w-full py-3 pl-6 rounded-3xl mb-5 md:mb-0"
+                                    type="text">
+                            </div>
+                            <textarea placeholder="Write your message here" name=""
+                                class="w-full h-52 rounded-3xl col-span-2 py-3 pl-6"></textarea>
+
+                        </div>
+                        <div class="mt-8 bg-button-color bg-opacity-80 rounded-3xl mx-4 md:mx-11 md:mr-11">
+                            <button class="py-2 text-xl font-extrabold ">Send Mail</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </section>
+    </main>
+
+    <!-- Footer Section  -->
+    <footer class="bg-black text-white py-28 ">
+        <section class="container mx-auto flex justify-center flex-col items-center text-center ">
+            <div class="mx-4">
+                <div>
+                    <div class="flex justify-center md:ml-11 mb-5 mx-4 md:mr-20 mr-5">
+                        <a class="rounded-lg flex font-bold py-2 px-5 text-white text-2xl">
+                            <div class="mr-2">
+                                <i
+                                    class="fa-solid fa-arrow-right-long ml- text-black bg-button-color p-1 rounded-full -rotate-45 "></i>
+                            </div>
+                            Rinterio
+                        </a>
+                    </div>
+
+                    <p class="pt-4 pb-11  md:w-3/4 md:text-center md:mx-auto">Known for its simplicity, functionality,
+                        and connection to nature. It features light wood, neutral colors, and a minimalist approach</p>
+                </div>
+                <ul class="md:flex items-center justify-center mb-12 space-y-4">
+                    <li><a href="#" class="md:mr-24">Home</a></li>
+                    <li><a href="#" class="md:mr-24">Services</a></li>
+                    <li><a href="#" class="md:mr-24">Portfolio</a></li>
+                    <li><a href="#" class="md:mr-24">Blogs</a></li>
+                    <li><a href="#" class="">Contact Us</a></li>
+                </ul>
+
+                <div>
+                    <button class="btn border-none bg-button-color px-10 rounded-full">About Us
+                        <div class="bg-[#1C1C1C] p-1 rounded-full -rotate-45 text-white">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </button>
+
+                </div>
+
+            </div>
+        </section>
+    </footer>
+    </div>
+</body>
+
+</html>
